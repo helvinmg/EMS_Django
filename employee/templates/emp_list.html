@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Employee Table</h2>
+    <table border=1>
+        <tr><th>Name</th><th>Desg</th><th>Salary</th></tr>
+        {% for emp in emps %}
+        <tr><td>{{emp.name}}</td><td>{{emp.desg}}</td><td>{{emp.salary}}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
